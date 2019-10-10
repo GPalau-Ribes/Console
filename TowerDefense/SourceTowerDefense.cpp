@@ -23,7 +23,16 @@ void setHouse(unsigned int x, unsigned int y, unsigned int houseWidth, unsigned 
 	{
 		for (size_t j = 0; j < width; j++)
 		{
-			map[x][y];
+			if (i == x && j == y)
+			{
+				for (size_t k = 0; k < houseHeight; k++)
+				{
+					for (size_t l = 0; l < houseWidth; l++)
+					{
+
+					}
+				}
+			}
 		}
 	}
 	
