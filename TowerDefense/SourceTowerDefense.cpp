@@ -25,11 +25,22 @@ void setHouse(unsigned int x, unsigned int y, unsigned int houseWidth, unsigned 
 		{
 			if (i == x && j == y)
 			{
-				for (size_t k = - (houseHeight / 2); k < houseHeight; k++)
+				for (size_t k = - (houseHeight / 2); k < (houseHeight / 2); k++)
 				{
-					for (size_t l = 0; l < houseWidth; l++)
+					for (size_t l = - (houseWidth / 2); l < (houseWidth / 2); l++)
 					{
-
+						if (k == 0 && l == 0)
+						{
+							map[x][y] = 'C';
+						}
+						else if (k == houseHeight && l == 0)
+						{
+							map[i][j] = 'E';
+						}
+						else
+						{
+							map[i][j] = 'H';
+						}
 					}
 				}
 			}
