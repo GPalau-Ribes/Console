@@ -1,7 +1,7 @@
 #include <iostream>
 
-const int width = 25;
-const int height = 50;
+const int width = 50;
+const int height = 25;
 
 //Función que inicializa el mapa en #
 void initMap(char(&map)[height][width])
@@ -18,9 +18,9 @@ void initMap(char(&map)[height][width])
 void paintMap(const char(&map)[height][width])
 {
 	system("cls");
-	for (int i = 0; i < width; i++)
+	for (int i = 0; i < height; i++)
 	{
-		for (int j = 0; j < height; j++)
+		for (int j = 0; j < width; j++)
 		{
 			std::cout << map[i][j];
 		}
