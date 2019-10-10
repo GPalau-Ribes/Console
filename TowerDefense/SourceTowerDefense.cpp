@@ -17,7 +17,17 @@ void initMap(char(&map)[height][width])
 
 void setHouse(unsigned int x, unsigned int y, unsigned int houseWidth, unsigned int houseHeight, char(&map)[height][width])
 {
+	if (x - (houseHeight / 2) < 0 || y - (houseWidth / 2) < 0 || x + (houseHeight / 2) >= height || y + (houseWidth / 2) >= width) { std::cout << "ERROR: Out Of Map." << std::endl; std::cin.get(); return; }
+	
+	for (size_t i = 0; i < houseHeight; i++)
+	{
+		for (size_t j = 0; j < houseWidth; j++)
+		{
 
+		}
+	}
+	
+	return;
 }
 
 void paintMap(const char(&map)[height][width])
@@ -40,6 +50,7 @@ int main()
 	char map[height][width];
 
 	initMap(map);
+	setHouse(5, 7, 3, 3, map);
 	paintMap(map);
 
 	std::cin.ignore();
