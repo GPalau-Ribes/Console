@@ -15,6 +15,11 @@ void initMap(char(&map)[height][width])
 	}
 }
 
+void setHouse(unsigned int x, unsigned int y, unsigned int houseWidth, unsigned int houseHeight, char(&map)[height][width])
+{
+
+}
+
 void paintMap(const char(&map)[height][width])
 {
 	system("cls");
