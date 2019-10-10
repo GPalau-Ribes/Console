@@ -25,7 +25,7 @@ void setHouse(unsigned int x, unsigned int y, unsigned int houseWidth, unsigned 
 		{
 			if (i == x && j == y)
 			{
-				for (size_t k = 0; k < houseHeight; k++)
+				for (size_t k = - (houseHeight / 2); k < houseHeight; k++)
 				{
 					for (size_t l = 0; l < houseWidth; l++)
 					{
@@ -59,7 +59,7 @@ int main()
 	char map[height][width];
 
 	initMap(map);
-	setHouse(5, 7, 3, 3, map);
+	setHouse(5, 7, 5, 5, map);
 	paintMap(map);
 
 	std::cin.ignore();
