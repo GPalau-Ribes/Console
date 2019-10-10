@@ -19,11 +19,11 @@ void setHouse(unsigned int x, unsigned int y, unsigned int houseWidth, unsigned 
 {
 	if (x - (houseHeight / 2) < 0 || y - (houseWidth / 2) < 0 || x + (houseHeight / 2) >= height || y + (houseWidth / 2) >= width) { std::cout << "ERROR: Out Of Map." << std::endl; std::cin.get(); return; }
 	
-	for (size_t i = 0; i < houseHeight; i++)
+	for (size_t i = 0; i < height; i++)
 	{
-		for (size_t j = 0; j < houseWidth; j++)
+		for (size_t j = 0; j < width; j++)
 		{
-
+			map[x][y];
 		}
 	}
 	
